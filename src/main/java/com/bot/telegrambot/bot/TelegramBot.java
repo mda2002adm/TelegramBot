@@ -60,3 +60,5 @@ public class TelegramBot extends TelegramLongPollingBot {
         }
     }
 }
+
+//TODO: Finish dispatchers
