@@ -21,7 +21,7 @@ public class Role {
     @JoinColumn(name = "category_id")
     private Category category;
 
-    ManyToOne
+    @ManyToOne
     @JoinColumn(name = "status_id")
     private Status status;
 
