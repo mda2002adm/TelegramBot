@@ -13,7 +13,7 @@ public class Category {
     public Long id;
 
     @Column(name = "category_name")
-    String categoryName;
+    private String categoryName;
 
     @OneToMany(mappedBy = "category")
     private List<Role> roles;

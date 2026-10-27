@@ -13,7 +13,7 @@ public class Status {
     public Long id;
 
     @Column(name = "status_name")
-    String statusName;
+    private String statusName;
 
     @OneToMany(mappedBy = "status")
     private List<Role> roles;

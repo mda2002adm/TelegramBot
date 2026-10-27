@@ -12,6 +12,7 @@ public class StartHandler implements CommandHandler {
     @Override
     public String handle(Update update) {
         // Handle the /start command logic here
+        return "Hello";
     }
 
 }

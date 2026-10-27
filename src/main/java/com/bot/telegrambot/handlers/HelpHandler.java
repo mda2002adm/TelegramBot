@@ -13,7 +13,7 @@ public class HelpHandler implements CommandHandler{
 
     @Override
     public String handle(Update update) {
-        return helpMessage;
+        return "Help";
     }
 
     public void setHelpMessage(String helpMessage) {

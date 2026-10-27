@@ -16,7 +16,6 @@ import java.util.Arrays;
 @Component
 public class TelegramBot extends TelegramLongPollingBot {
     private static final Logger logger = LoggerFactory.getLogger(TelegramBot.class);
-    private final TelegramBotsApi telegramBotsApi;
 
     @Value("${bot.username}")
     private String botUsername;
@@ -25,8 +24,8 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     public CommandDispatcher dispatcher;
 
-    public TelegramBot(TelegramBotsApi telegramBotsApi) {
-        this.telegramBotsApi = telegramBotsApi;
+    public TelegramBot() {
+
     }
 
 

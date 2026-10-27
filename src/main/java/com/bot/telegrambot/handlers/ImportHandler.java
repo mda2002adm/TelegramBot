@@ -12,6 +12,6 @@ public class ImportHandler implements CommandHandler{
 
     @Override
     public String handle(Update update) {
-
+        return "Importing data...";
     }
 }

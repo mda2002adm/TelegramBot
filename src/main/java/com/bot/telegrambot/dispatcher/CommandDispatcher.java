@@ -18,7 +18,7 @@ public class CommandDispatcher {
         ));
     }
 
-    public void handleCommand(String command, Update update){
+    public String  handleCommand(String command, Update update){
         return handlers.get(command).handle(update);
     }
 }

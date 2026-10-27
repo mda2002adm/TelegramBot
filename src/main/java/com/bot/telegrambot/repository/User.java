@@ -3,6 +3,7 @@ package com.bot.telegrambot.repository;
 import jakarta.persistence.*;
 
 import java.sql.Date;
+import java.util.List;
 
 
 @Entity
@@ -21,5 +22,8 @@ public class User {
     @ManyToOne
     @JoinColumn(name = "chatrole_id")
     private ChatRole chatRole;
+
+    @OneToMany(mappedBy = "user")
+    private List<Rest> rests;
 
 }
