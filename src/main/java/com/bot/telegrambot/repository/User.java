@@ -14,8 +14,12 @@ public class User {
     @Column(name="birthday")
     private Date birthDay;
 
-    @Column(name="role_id")
-    @OneToMany()
-    private Long roleId;
+    @ManyToOne
+    @JoinColumn(name = "role_id")
+    private Role role;
+
+    @ManyToOne
+    @JoinColumn(name = "chatrole_id")
+    private ChatRole chatRole;
 
 }
